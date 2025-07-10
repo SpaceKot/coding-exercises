@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="experimental">
+        <form action="#">
+            <div>
+                <input type="text" placeholder="Запрос..." id="query" name="search_query">  
+            </div>
+            <div>
+                <label for="agree">Согласен с обработкой данных</label>
+                <input type="checkbox" name="agree" id="agree" />
+            </div>
+            <div>
+                <input type="radio" name="search" id="all" value="all">
+                <label for="all">Поиск повсюду</label>
+            </div>
+            <div>
+                <input type="radio" name="search" id="YouTube" value="youtube">
+                <label for="YouTube">Поиск на YouTube</label>
+            </div>
+            <label for="topic">Тематика</label>
+            <select name="topic" id="topic">
+                <option value="1">Все</option>
+                <optgroup label="Популярные">
+                    <option value="2">Животные</option>
+                    <option value="3" selected>Разработка</option>
+                </optgroup>
+                <optgroup label="Популярные-2">
+                    <option value="2">Животные</option>
+                    <option value="3" selected>Разработка</option>
+                </optgroup>
+            </select>
+            <button>Искать на YouTube</button>
+        </form>
+    </section>
+</body>
+</html>
